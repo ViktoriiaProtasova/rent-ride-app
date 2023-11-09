@@ -2,9 +2,11 @@ import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 40px;
   padding: 10px;
   background: var(--primary-light);

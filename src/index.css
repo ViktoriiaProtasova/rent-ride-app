@@ -10,6 +10,7 @@
 
   --dark-light: #121417;
   --dark-transparent-light: rgba(18, 20, 23, 0.5);
+  --transparent-light: rgba(247, 247, 251, 1);
   --dark-gray-light: #8a8a89;
   --gray-light: #f7f7fb;
   --white-light: #ffffff;
@@ -36,15 +37,6 @@ body {
   color: var(--dark-light);
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 ul {
   list-style: none;
   margin-top: 0;
@@ -62,4 +54,49 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 7px;
+}
+
+label {
+  color: var(--dark-gray-light);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+option {
+  display: inline-flex;
+  height: 272px;
+  padding: 14px 8px 14px 18px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 112px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: none;
+  border: 1px solid rgba(18, 20, 23, 0.05);
+  background: var(--white-light);
+  box-shadow: 0px 4px 36px 0px rgba(0, 0, 0, 0.02);
+  color: rgba(18, 20, 23, 0.2);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: color var(--animation-duration, --animation-timing-function);
+}
+
+option:hover {
+  color: var(--dark-light);
+}
+
+select::-webkit-scrollbar {
+  width: 8px;
+  height: 130px;
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: rgba(18, 20, 23, 0.05);
+  border-radius: 10px;
+}
+
+select::-webkit-scrollbar-track {
+  background-color: rgba(18, 20, 23, 0.05);
 }
