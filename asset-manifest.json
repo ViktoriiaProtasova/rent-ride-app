@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rent-ride-app/static/css/main.5e64c546.css",
-    "main.js": "/rent-ride-app/static/js/main.f800006f.js",
+    "main.js": "/rent-ride-app/static/js/main.a5979eb0.js",
     "static/media/car-rental.png": "/rent-ride-app/static/media/car-rental.fc6012b8fc681457f1d4.png",
     "index.html": "/rent-ride-app/index.html",
     "static/media/sprite.svg": "/rent-ride-app/static/media/sprite.ee481ace29aba40739be34de837b3ab5.svg",
     "main.5e64c546.css.map": "/rent-ride-app/static/css/main.5e64c546.css.map",
-    "main.f800006f.js.map": "/rent-ride-app/static/js/main.f800006f.js.map"
+    "main.a5979eb0.js.map": "/rent-ride-app/static/js/main.a5979eb0.js.map"
   },
   "entrypoints": [
     "static/css/main.5e64c546.css",
-    "static/js/main.f800006f.js"
+    "static/js/main.a5979eb0.js"
   ]
 }
