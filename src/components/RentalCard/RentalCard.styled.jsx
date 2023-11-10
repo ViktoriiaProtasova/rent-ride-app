@@ -8,36 +8,61 @@ export const CatalogItem = styled.li`
   height: 426px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 28px;
-  flex-shrink: 0;
+  gap: 8px;
+  padding-right: 9px;
+`;
+
+export const CatalogImageThumb = styled.div`
+  width: 274px;
+  height: 268px;
+`;
+
+export const CatalogTitleWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 export const CatalogImage = styled.img`
-  width: 274px;
-  height: 268px;
+  object-fit: cover;
   border-radius: 14px;
   background: #f3f3f2;
 `;
 
-export const CatalogTitle = styled.div`
+export const CatalogTitle = styled.ul`
   display: flex;
-  align-items: flex-start;
-  gap: 87px;
-  color: #121417;
+  align-items: center;
+  gap: 5px;
+`;
+
+export const CatalogTitleItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
+
+export const CatalogTitleText = styled.p`
+  color: var(--dark-light);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 `;
 
 export const CatalogTitleAccent = styled.p`
-  display: flex;
-  align-items: flex-start;
-  gap: 87px;
   color: var(--primary-light);
+`;
+
+export const CatalogFeautersWrapper = styled.div`
+  display: flex;
+  gap: 5px;
 `;
 
 export const CatalogFeatures = styled.ul`
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   font-weight: 400;
@@ -65,7 +90,7 @@ export const CardFavoriteIcon = styled.svg`
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  stroke: rgba(255, 255, 255, 0.8);
+  stroke: rgba(52, 112, 255, 1);
   fill: transparent;
 `;
 // fill: rgba(52, 112, 255, 1);
