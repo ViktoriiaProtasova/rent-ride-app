@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { getAllAdverts, getAdvert } from '../apiFetch';
+import { getAllAdverts, getAdvertsByPage } from '../apiFetch';
 
 export const fetchAllAdverts = createAsyncThunk(
   'adverts/fetchAll',
@@ -13,11 +13,11 @@ export const fetchAllAdverts = createAsyncThunk(
   }
 );
 
-export const fetchAdvert = createAsyncThunk(
-  'adverts/fetchAdvert',
-  async (_, thunkAPI) => {
+export const fetchAdvertsByPage = createAsyncThunk(
+  'adverts/fetchByPage',
+  async ({ page, limit }, thunkAPI) => {
     try {
-      const response = await getAdvert();
+      const response = await getAdvertsByPage({ page, limit });
       return response;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
